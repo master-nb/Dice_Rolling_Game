@@ -1,0 +1,17 @@
+import random
+
+user= int(input('''Do you want play this game?
+1. Yes
+2. No
+'''))
+if user==1:
+    while True:
+        print(random.randint(1,6))
+        num = input('Play your move:[y/n]')
+        if num=='y':
+            continue
+        else:
+            print('Game Over')
+            break
+else:
+    print('You exit this game.')
